@@ -8,7 +8,7 @@ edition = "2018"
 name = "rust_utils"
 
 [dependencies]
-log = "*"
-env_logger = "*"
-ansi_term = "*"
-floating-duration = "*"
+log = "0.4"
+env_logger = "0.6"
+ansi_term = "0.11"
+floating-duration = "0.1"
