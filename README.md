@@ -1,9 +1,12 @@
 # scrub_log
 
-[![Build Status][bi]][bl] ![MIT][li]
+[![Build Status][bi]][bl] [![Crates.io][ci]][cl] ![MIT][li]
 
 [bi]: https://travis-ci.org/glalonde/scrub_log.svg?branch=master 
 [bl]: https://travis-ci.org/glalonde/scrub_log
+
+[ci]: https://img.shields.io/crates/v/scrub_log.svg
+[cl]: https://crates.io/crates/scrub_log/
 
 [li]: https://img.shields.io/badge/license-MIT%2FApache-blue.svg
 
@@ -15,7 +18,7 @@ Add this crate to `Cargo.toml`
 
 ```toml
 [dependencies]
-scrub_log = { git = "https://github.com/glalonde/scrub_log" }
+scrub_log = "0.1.0"
 ```
 
 Now you can easily print a nice log line for all your printf debugging needs, glog style.
