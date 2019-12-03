@@ -1,14 +1,18 @@
 [package]
-name = "rust_utils"
+name = "scrub_log"
 version = "0.1.0"
 authors = ["Geoffrey Lalonde <lalondegeoffrey@gmail.com>"]
 edition = "2018"
+description = """
+Log formatter with colors, file locations, program runtime.
+"""
+repository = "https://github.com/glalonde/scrub_log"
+license = "MIT"
+keywords = ["time", "float", "fmt", "formatting", "fractional"]
+categories = ["debugging"]
 
-[lib]
-name = "rust_utils"
 
 [dependencies]
 log = "0.4"
-env_logger = "0.6"
-ansi_term = "0.11"
-floating-duration = "0.1"
+env_logger = "0.7"
+ansi_term = "0.12"

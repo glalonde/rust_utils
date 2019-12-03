@@ -1,10 +1,7 @@
-
-#[macro_use]
-extern crate log;
-extern crate rust_utils;
+use log::{debug, error, info, trace, warn};
 
 fn main() {
-    let _ = rust_utils::init_logger(log::Level::Trace);
+    scrub_log::init().unwrap();
     trace!("How much wood");
     debug!("would a woodchuck chuck");
     info!("if a woodchuck");
