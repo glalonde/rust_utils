@@ -4,6 +4,7 @@ use std::borrow::Borrow;
 use std::fmt;
 use std::time::{Duration, Instant};
 
+// Duration formatting
 #[derive(Clone, Copy, Debug)]
 pub struct TimeFormat<T: Borrow<Duration>>(pub T);
 impl<T: Borrow<Duration>> fmt::Display for TimeFormat<T> {
