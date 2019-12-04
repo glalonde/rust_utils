@@ -1,6 +1,6 @@
 [package]
 name = "scrub_log"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Geoffrey Lalonde <lalondegeoffrey@gmail.com>"]
 edition = "2018"
 description = """
@@ -8,6 +8,7 @@ Log formatter with colors, file locations, program run duration.
 """
 repository = "https://github.com/glalonde/scrub_log"
 license = "MIT"
+readme = "README.md"
 categories = ["development-tools::debugging"]
 
 [dependencies]

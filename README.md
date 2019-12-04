@@ -18,7 +18,7 @@ Add this crate to `Cargo.toml`
 
 ```toml
 [dependencies]
-scrub_log = "0.1.0"
+scrub_log = "0.1.1"
 ```
 
 Now you can easily print a nice log line for all your printf debugging needs, glog style.
@@ -43,3 +43,4 @@ INFO 58.178µs [log_example:7] consectetur adipiscing elit,
 WARNING 68.099µs [log_example:8] ed do eiusmod
 ERROR 77.319µs [log_example:9] tempor incididunt
 ```
+![Image of text](https://glalon.de/content/images/2019/12/2019-12-03-194513_670x196_scrot-2.png)
