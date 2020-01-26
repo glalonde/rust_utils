@@ -1,6 +1,6 @@
 [package]
 name = "scrub_log"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Geoffrey Lalonde <lalondegeoffrey@gmail.com>"]
 edition = "2018"
 description = """
