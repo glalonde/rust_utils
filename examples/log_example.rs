@@ -1,7 +1,8 @@
 use log::{debug, error, info, trace, warn};
+use std::{thread, time};
 
 gflags::define! {
-    --log_filter: &str = "log_example=info"
+    --log_filter: &str = "log_example=trace"
 }
 
 fn main() {
@@ -12,4 +13,13 @@ fn main() {
     info!("consectetur adipiscing elit,");
     warn!("ed do eiusmod");
     error!("tempor incididunt");
+
+    loop {
+        thread::sleep(time::Duration::from_millis(15));
+        trace!("reporting live");
+        debug!("reporting live");
+        info!("reporting live");
+        warn!("reporting live");
+        error!("reporting live");
+    }
 }

@@ -11,12 +11,12 @@ impl<T: Borrow<Duration>> fmt::Display for TimeFormat<T> {
         let dur: &Duration = self.0.borrow();
         // The format string pads the fractional part out to 3 decimals.
         if dur.as_secs() > 0 {
-            write!(f, "{}.{:0<3}s", dur.as_secs(), dur.subsec_millis())
+            write!(f, "{}.{:0>3}s", dur.as_secs(), dur.subsec_millis(),)
         } else if dur.subsec_millis() > 0 {
             let integral = dur.subsec_millis();
             write!(
                 f,
-                "{}.{:0<3}ms",
+                "{}.{:0>3}ms",
                 integral,
                 dur.subsec_micros() - integral * 1000
             )
@@ -24,7 +24,7 @@ impl<T: Borrow<Duration>> fmt::Display for TimeFormat<T> {
             let integral = dur.subsec_micros();
             write!(
                 f,
-                "{}.{:0<3}µs",
+                "{}.{:0>3}µs",
                 integral,
                 dur.subsec_nanos() - integral * 1000
             )
